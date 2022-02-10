@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables */
+#navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    z-index: 10;
+    /* border: 0.02rem solid black; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo img {
+    height: 3.5rem;
+    margin: 1px 5px;
+
+    /* border: 0.02rem solid black; */
+}
+
+#navbar ul {
+    display: flex;
+
+    /* border: 0.02rem solid black; */
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin: 0.5em;
+    /* border: 0.02rem solid black; */
+}
+
+#navbar ul li a {
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 0.2rem 1.2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    /* border: 0.2rem solid black; */
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding: 0.2rem 1.2rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    /* border: 0.2rem solid black; */
+}
+
+#home::before {
+    background: url(../image/bg_main.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.7;
+    top: 0px;
+    left: 0;
+}
+
+#home {
+    display: flex;
+    padding: 50px 200px;
+    height: 330px;
+    margin: 125px auto;
+    width: 50rem;
+    border-radius: 40px;
+    background-color: rgba(239, 248, 248, 0.596);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h-primary {
+    font-size: 2.4rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.h-secondary {
+    font-size: 1.6rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+#home p {
+    text-align: center;
+    text-shadow: 0 0.1px 0.1px black;
+    font-family: 'Playfair Display', serif;
+    padding: 5px 0;
+}
+
+.btn {
+    border: 2px black solid;
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 2px 4px;
+    background-color: aliceblue;
+    text-decoration: solid;
+}
+
+.btn:hover {
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 2px 4px;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 2px 2px black;
+    background-color: rgba(162, 252, 134, 0.486);
+}
+
+/* services container  */
+#services {
+    margin: 0 34px;
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+
+}
+
+#services .box {
+    border: 2px black solid;
+    padding: 34px;
+    margin: 5px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    background-color: rgba(233, 252, 245, 0.521);
+    text-align: center;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 300px;
+    justify-content: center;
+}
+
+#services .box p {
+    font-family: 'Playfair Display', serif;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(240, 255, 255, 0.548); 
+}
+
+#client-section{ 
+    position: relative;
+}
+
+#clients img{
+    height: 150px;
+}
+
+.client-item{
+    padding: 44px;
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('../image/bg1.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* contact section  */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url(../image/contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box form label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
